@@ -1,11 +1,11 @@
 class BloqueCofre:
     def __init__(self, capacidad, resistencia, tipo):
-        self.capacidad = capacidad
-        self.resistencia = resistencia
-        self.tipo = tipo
+        self.__capacidad = capacidad
+        self.__resistencia = resistencia
+        self.__tipo = tipo
 
     def accion(self):
-        print(f"Se abre el cofre de tipo: {self.tipo}")
+        print(f"Se abre el cofre de tipo: {self.__tipo}")
 
     def colocar(self, orientacion):
         print(f"BloqueCofre colocado en: {orientacion}")
@@ -14,24 +14,24 @@ class BloqueCofre:
         print("El cofre se rompió y se perdieron los objetos.")
 class BloqueTnt:
     def __init__(self, tipo, daño):
-        self.tipo = tipo
-        self.daño = daño
+        self.__tipo = tipo
+        self.__daño = daño
 
     def accion(self):
-        print(f"La TNT de tipo {self.tipo} ha sido activada!")
+        print(f"La TNT de tipo {self.__tipo} ha sido activada!")
 
     def colocar(self, orientacion):
         print(f"BloqueTnt colocado en: {orientacion}")
 
     def romper(self):
-        print(f"La TNT explotó causando {self.daño} de daño.")
+        print(f"La TNT explotó causando {self.__daño} de daño.")
 class BloqueHorno:
     def __init__(self, color, capacidad_comida):
-        self.color = color
-        self.capacidad_comida = capacidad_comida
+        self.__color = color
+        self.__capacidad_comida = capacidad_comida
 
     def accion(self):
-        print(f"El horno de color {self.color} está cocinando comida.")
+        print(f"El horno de color {self.__color} está cocinando comida.")
 
     def colocar(self, orientacion):
         print(f"BloqueHorno colocado en: {orientacion}")
