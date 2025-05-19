@@ -67,8 +67,8 @@ class Equipo:
         self.__jugadores.append(jugador)
 
     def mostrar_equipo(self):
-        print(f"\n🏟️ Nombre del equipo: {self.__nombre}")
-        print("📋 Lista de jugadores:")
+        print(f" Nombre del equipo: {self.__nombre}")
+        print(" Lista de jugadores:")
         for jugador in self.__jugadores:
             jugador.mostrar_info()
             print("-" * 40)
